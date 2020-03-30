@@ -14,14 +14,14 @@ public class Player {
         this.x = x;
         this.y = y;
         this.width = 40;
-        this.height = 10;
+        this.height = 5;
     }
 
     public void tick() {
         if (right) {
-            x++;
+            x += 2;
         } else if (left)
-            x--;
+            x -= 2;
 
         if (x + width > Game.WIDTH) {
             x = Game.WIDTH - width;
