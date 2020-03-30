@@ -16,7 +16,7 @@ public class Ball {
     public double x, y;
     public int width, height;
     public double dx, dy;
-    public double speed = 1.7;
+    public double speed = 1.8;
     public boolean statusGame = true;
 
     public Ball(int x, int y) {
@@ -28,7 +28,7 @@ public class Ball {
         int angle = new Random().nextInt(120 - 45) + 46;
 
         dx = Math.cos(Math.toRadians(angle));
-        dy = Math.cos(Math.toRadians(angle));
+        dy = Math.sin(Math.toRadians(angle));
     }
 
     public void tick() {
@@ -67,14 +67,14 @@ public class Ball {
             int angle = new Random().nextInt(120 - 45) + 46;
 
             dx = Math.cos(Math.toRadians(angle));
-            dy = Math.cos(Math.toRadians(angle));
+            dy = Math.sin(Math.toRadians(angle));
             if (dy > 0)
                 dy *= -1;
         } else if (bounds.intersects(boundsEnemy)) {
             int angle = new Random().nextInt(120 - 45) + 46;
 
             dx = Math.cos(Math.toRadians(angle));
-            dy = Math.cos(Math.toRadians(angle));
+            dy = Math.sin(Math.toRadians(angle));
 
             if (dy < 0)
                 dy *= -1;
