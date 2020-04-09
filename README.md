@@ -9,9 +9,9 @@ Jogo de Ping Pong feito em Java pelo estudo de desenvolvimento de jogos.
 
 Feito com:
 
-[x] Rectangle Class
-[x] FillRect para dimensionar o retangulo e preencher com cor
-[x] Color Class
+    [x] Rectangle Class
+    [x] FillRect para dimensionar o retangulo e preencher com cor
+    [x] Color Class
 
 ## Inimigo IA
 
@@ -28,6 +28,6 @@ Com a função matemática de Cosseno e Seno, consegui obter uma maior aleatorie
 Ao morrer é perguntado ao jogador se quer continuar ou não.
 Com JOptionPane.showConfirmDialog();
 
-[x] Sim - O Jogo é novamente Instanciado
-[x] Não - O jogo fecha com System.exit(1);
+    [x] Sim - O Jogo é novamente Instanciado
+    [x] Não - O jogo fecha com System.exit(1);
 
