@@ -89,7 +89,7 @@ public class Game extends Canvas implements Runnable, KeyListener {
                 e.printStackTrace();
             }
             if (!ball.statusGame)
-                return;
+                System.exit(1);
         }
     }
 
